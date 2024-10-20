@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, linkedinIcon, instagramIcon, facebookIcon } from "../assets"; // Import social icons
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -45,7 +44,6 @@ const Navbar = () => {
           <img src="/src/assets/cs.png" alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Chamod Shyamal &nbsp;
-           
           </p>
         </Link>
 
@@ -62,6 +60,19 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* Social Media Icons */}
+        <div className='flex items-center gap-4'>
+          <a href="https://www.linkedin.com/in/chamod-shyamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            <img src={linkedinIcon} alt="LinkedIn" className='w-6 h-6 object-contain' />
+          </a>
+          <a href="https://www.instagram.com/_captain_price_2000?igsh=eTh3OTIyODN3bXdv" target="_blank" rel="noopener noreferrer">
+            <img src={instagramIcon} alt="Instagram" className='w-6 h-6 object-contain' />
+          </a>
+          <a href="https://www.facebook.com/chamod.shyamal.52" target="_blank" rel="noopener noreferrer">
+            <img src={facebookIcon} alt="Facebook" className='w-6 h-6 object-contain' />
+          </a>
+        </div>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
