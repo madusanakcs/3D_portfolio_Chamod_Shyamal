@@ -71,6 +71,10 @@ import rb from "./rb.png";
 import med from "./med.png";
 import back from "./back.png";
 
+import facebookIcon from "./fb.png";
+import instagramIcon from "./ins.png";
+import linkedinIcon from "./lin.png";
+
 
 
 export {
@@ -141,6 +145,9 @@ export {
   rb,
   med,
   back,
+  facebookIcon,
+  instagramIcon,
+  linkedinIcon,
 
 
 };
